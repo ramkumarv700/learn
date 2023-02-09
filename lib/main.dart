@@ -33,7 +33,17 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("hello"),
+        centerTitle: true,
+        automaticallyImplyLeading: true,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.search),
+          )
+        ],
+      ),
       drawer: Drawer(
       child: SafeArea(
         child: Text(

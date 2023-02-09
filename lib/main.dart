@@ -55,7 +55,16 @@ class _HomepageState extends State<Homepage> {
         ),
       ),
     ),
+      body:
+      Center(
+        child: ElevatedButton(
+
+          child: Text('SignUp', style: TextStyle(fontSize: 20.0),),
+          onPressed: () {
+            print("object");
+          },
+        ),
+      ),
     );
   }
 }
-
